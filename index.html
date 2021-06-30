@@ -123,6 +123,34 @@
                 <li><span class="highlight">Vorsicht</span> Einige TUSTEP-Zeichen verwenden das Semikolon: <code>#.; #; %; </code></li></ul>
             </div>
             <div class="step">
+                <h2 class="red">Arbeiten mit CSV-Dateien</h2>
+                <pre><code>$$ MODE TUSCRIPT,{}
+csv="sprueche.csv"
+path2csv=FULL_NAME (TUSTEP,csv,-std-)
+status=READ (path2csv,daten,UTF8)
+
+MODE DATA
+$$ BUILD S_TABLE trenner=*
+||"*"|%;||#;|||
+|;|
+
+$$ MODE STATEMENT
+LOOP/CLEAR zeile=daten
+ x=SPLIT (zeile,trenner,spalte1,spalte2,spalte3)
+
+ PRINT/COLOR:F0 spalte1,": ",spalte2," sagt: ",spalte3
+
+ zeileneu=JOIN (spalte3,";",spalte2,spalte1)
+ daten=APPEND (daten,zeileneu)
+ENDLOOP
+
+ziel="sprueche_neu.csv"
+ERROR/STOP CREATE (ziel,fdf-o,-std-)
+
+path2ziel=FULL_NAME (TUSTEP,ziel,-std-)
+status=WRITE (path2ziel,daten,UTF8)</code></pre>
+            </div>
+            <div class="step">
                 <dl>
                     <dt class="red">02</dt>
                     <dd>von TUSTEP zu EXCEL</dd>
