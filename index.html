@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ITUG JOUR FIXE 05</title>
+        <!-- meta information -->
+        <meta name="author" content="Thomas Kollatz" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <!-- favicons -->
+        <link rel="shortcut icon" href="resources/img/favicon.png" />
+        <link rel="apple-touch-icon" href="resources/img/apple-touch-icon.png" />
+        <!-- CSS reset and grid -->
+        <link href="vendor/normalize/normalize-4.1.1.css" rel="stylesheet" />
+        <link href="vendor/skeleton/skeleton-2.0.4.css" rel="stylesheet" />
+        <!-- fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,600italic,400italic,700italic,800,800italic&amp;subset=latin,latin-ext"
+            rel="stylesheet" type="text/css" />
+        <!-- styles for included libraries -->
+        <!-- unite gallery -->
+        <link rel="stylesheet" href="vendor/unitegallery/css/unite-gallery.css" type="text/css" />
+        <!-- codemirror -->
+        <link rel="stylesheet" href="vendor/codemirror/lib/codemirror.css" />
+        <!-- highlight -->
+        <link rel="stylesheet" href="vendor/highlight/styles/default.css" />
+        <link rel="stylesheet" href="resources/css/hljs.linenumbering.css" />
+        <!-- swiper -->
+        <link rel="stylesheet" href="vendor/swiper/swiper.min.css" />
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup-1.1.0.css" />
+        <!-- standard presentation styles -->
+        <link href="resources/css/style.css" rel="stylesheet" />
+        <!-- custom presentation styles -->
+        <link href="resources/css/custom.css" rel="stylesheet" />
+        <!-- hint styles -->
+        <link href="resources/css/hint.css" rel="stylesheet" />
+        <!-- js needed in head -->
+        <!-- greuler -->
+        <script src="vendor/d3/d3-3.5.6.js"></script>
+        <script src="vendor/cola/cola.v3.min.js"></script>
+        <script src="vendor/greuler/greuler-0.5.5.min.js"></script>
+        <!-- html5 dataset shim for IE -->
+        <script src="vendor/impress/html5-dataset.js"></script>
+    </head>
+    <body>
+        <div class="fallback-message">
+            <p> Your browser <strong>doesn't support the features required</strong> by
+                impress.mod.js, so you are presented with a simplified version of this presentation. </p>
+            <p> For the best experience please use the latest <strong>Chrome</strong>,
+                    <strong>Safari</strong> or <strong>Firefox</strong> browser. </p>
+        </div>
+        <div id="impress">
+            <div class="step">
+                <h5><strong>2021-06-30</strong> ZOOM-Universe </h5>
+                <h5>
+                    <strong>
+                        <a href="https://www.itug.de/pages/aktuelles.html">ITUG Jour Fixe 03</a>
+                    </strong>
+                </h5>
+                <h2 class="red down-100">Im- und Export von Tabellenstrukturen</h2>
+                <h3 class=" down-25">Von EXCEL zu TUSTEP und retour</h3>
+                <h5 class="down-25">Präsentation <a href="https://itug.github.io/ITUGJF03"
+                    title="View the presentation online"
+                    >https://itug.github.io/ITUGJF05</a><br />Daten <a
+                    href="https://github.com/ITUG/ITUGJF05"
+                    >https://github.com/ITUG/ITUGJF05</a><br />Download <a
+                    href="https://github.com/ITUG/ITUGJF05/archive/refs/heads/main.zip"
+                    >Präsentation und Daten</a> (zip)</h5>
+                <h5 class="down-75">
+                    <!--<strong>
+                        <a href="https://orcid.org/0000-0001-5485-7681" target="_blank"
+                            >Wieland Carls</a>
+                    </strong>
+                    <img src="resources/img/Twitter_bird_logo_2012.svg" alt="Twitter"
+                        class="twitter-icon" />
+                    <a href="https://twitter.com/felixf006" title="Wieland Carls on Twitter"
+                        target="_blank">@felixf006</a>
+                    <br />-->
+                    <strong>
+                        <a href="https://orcid.org/0000-0003-1904-1841" target="_blank"
+                            >Thomas Kollatz</a>
+                    </strong>
+                    <!--<a
+                    href="http://www.adwmainz.de/en/digitalitaet/digitale-akademie.html"
+                    target="_blank">Digital
+                    Academy</a>@<a href="http://www.adwmainz.de/en/home.html"
+                    target="_blank">Akademie der Wissenschaften und Literatur | Mainz</a>-->
+                    <img src="resources/img/Twitter_bird_logo_2012.svg" alt="Twitter"
+                        class="twitter-icon" />
+                    <a href="https://twitter.com/kol_t" title="Thomas Kollatz on Twitter"
+                        target="_blank">@kol_t</a>
+                    <br />
+                    <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>
+                </h5>
+            </div>
+            <!-- div.step-->
+            <div class="step">
+                <dl>
+                    <dt class="red">01</dt>
+                    <dd>von EXCEL zu TUSTEP</dd>
+                </dl>
+            </div>
+            <div class="step">
+                <h2 class="red">CSV als Exportformat</h2>
+                <figure class="mfp-lightbox"><a href="resources/img/excel.png">
+                    <img src="resources/img/excel.png" alt="Ansicht einer Excel-Tabelle"/> 
+                </a></figure>
+                <div class="row">
+                    <div class="four columns">
+                        <figure class="mfp-lightbox"><a href="resources/img/saveAS.png"><img src="resources/img/saveAS.png" alt="saveAs"></a></figure></div>
+                    <div class="four columns">
+                        <figure class="mfp-lightbox"><a href="resources/img/saveAsCsv.png"><img src="resources/img/saveAsCsv.png" alt="saveAsCSV"></a></figure></div>
+                    <div class="four columns">
+                        <figure class="mfp-lightbox"><a href="resources/img/csv.png"><img src="resources/img/csv.png" alt="csv"></a></figure>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <h2 class="red">CSV und TUSTEP</h2>
+                <ul class="line-height-one-five"><li>Beim Export aus Excel ist als Trennzeichen zwischen Spalten das Semikolon <code>;</code> festgelegt</li>
+                <li>Spalten, die intern Semikola verwenden, werden mit dem Textqualifizierer<code>"</code> umschlossen</li>
+                <li><span class="highlight">Vorsicht</span> Einige TUSTEP-Zeichen verwenden das Semikolon: <code>#.; #; %; </code></li></ul>
+            </div>
+            <div class="step">
+                <dl>
+                    <dt class="red">02</dt>
+                    <dd>von TUSTEP zu EXCEL</dd>
+                </dl>
+            </div>
+            <div class="step">
+                <h2 class="red">CSV als Importformat</h2>
+                <div class="row">
+                    <div class="eight columns">
+                        <figure class="mfp-lightbox">
+                            <a href="resources/img/csv_neu.png">
+                                <img src="resources/img/csv_neu.png" alt="Ansicht einer CSV-Tabelle"/> 
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="four columns">
+                        <figure class="mfp-lightbox"><a href="resources/img/Importieren_menu.png"><img src="resources/img/Importieren_menu.png" alt="neu"></a></figure>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="four columns">
+                        
+                        
+                        
+                        <figure class="mfp-lightbox"><a href="resources/img/Importieren.png"><img src="resources/img/Importieren.png" alt="Importieren"></a></figure>
+                        <figure class="mfp-lightbox"><a href="resources/img/Importieren_csv.png"><img src="resources/img/Importieren_csv.png" alt="Importieren"></a></figure>
+                    </div>
+                    <div class="four columns">
+                        <figure class="mfp-lightbox"><a href="resources/img/Textkonvertierung.png"><img src="resources/img/Textkonvertierung.png" alt="Excel"></a></figure>
+                        <figure class="mfp-lightbox"><a href="resources/img/Trennzeichen.png"><img src="resources/img/Trennzeichen.png" alt="Spaltentyp"></a></figure>
+                        </div>
+                    <div class="four columns">
+                        <figure class="mfp-lightbox"><a href="resources/img/Spaltentyp.png"><img src="resources/img/Spaltentyp.png" alt="Spaltentyp"></a></figure>
+                        <figure class="mfp-lightbox"><a href="resources/img/EXCEL_neu.png"><img src="resources/img/EXCEL_neu.png" alt="Excel"></a></figure>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                
+            
+            
+            
+				
+            
+            <div class="step">
+                <dl>
+                    <dt class="red">03</dt>
+                    <dd>Beispiele – Live</dd>
+                </dl>
+            </div>
+        </div>
+        <!-- jquery -->
+        <script src="vendor/jquery/jquery-1.11.0.min.js"></script>
+        <!-- unite gallery -->
+        <script src="vendor/unitegallery/js/unitegallery.min.js"></script>
+        <script src="vendor/unitegallery/themes/tiles/ug-theme-tiles.js"></script>
+        <script src="resources/js/unite.gallery.js"></script>
+        <!-- highlight -->
+        <script src="vendor/highlight/highlight.pack-9.3.0.js"></script>
+        <script>
+            hljs.initHighlightingOnLoad();</script>
+        <script src="resources/js/hljs.linenumbering.js"></script>
+        <!-- swiper -->
+        <script src="vendor/swiper/swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                spaceBetween: 30,
+                hashnav: true
+            });</script>
+        <!-- magnific popup -->
+        <script src="vendor/magnific-popup/jquery.magnific-popup.min-1.1.0.js"></script>
+        <script src="resources/js/magnific-popup.lightbox.js"></script>
+        <!-- impress.mod.js -->
+        <script src="vendor/impress/impress.fork.js"></script>
+        <script src="vendor/impress/impress-slidenum.js"></script>
+        <script>
+            var obj = impress();
+            obj.init();
+            initSlideNo(obj);</script>
+        <!--<script>
+            var videoStep = document.getElementById("video-step");
+var video = document.getElementById("video");
+videoStep.addEventListener("impress:stepenter", function() {
+    video.play();
+}, false);
+videoStep.addEventListener("impress:stepleave", function() {
+    video.pause();
+}, false);
+        </script>-->
+        <script>
+            var videos = document.getElementsByTagName("video");
+            Array.prototype.forEach.call(videos, function (video) {
+                var videoStep = video.closest(".step");
+                videoStep.addEventListener("impress:stepenter", function () {
+                    video.play();
+                },
+                false);
+                videoStep.addEventListener("impress:stepleave", function () {
+                    video.pause();
+                },
+                false);
+            });</script>
+    </body>
+</html>
