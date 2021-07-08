@@ -141,9 +141,7 @@ $$ BUILD S_TABLE trenner=*
 $$ MODE STATEMENT
 LOOP/CLEAR zeile=daten
  x=SPLIT (zeile,trenner,spalte1,spalte2,spalte3)
-
  PRINT/COLOR:F0 spalte1,": ",spalte2," sagt: ",spalte3
-
  zeileneu=JOIN (spalte3,";",spalte2,spalte1)
  daten=APPEND (daten,zeileneu)
 ENDLOOP
