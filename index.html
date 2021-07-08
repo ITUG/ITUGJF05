@@ -148,7 +148,11 @@ ziel="sprueche_neu.csv"
 ERROR/STOP CREATE (ziel,fdf-o,-std-)
 
 path2ziel=FULL_NAME (TUSTEP,ziel,-std-)
-status=WRITE (path2ziel,daten,UTF8)</code></pre>
+status=WRITE (path2ziel,daten,UTF8)
+IF (status!="OK") THEN 
+ PRINT/ERROR status
+ STOP
+ENDIF</code></pre>
             </div>
             <div class="step">
                 <dl>
