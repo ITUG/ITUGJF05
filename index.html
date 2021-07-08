@@ -128,6 +128,10 @@
 csv="sprueche.csv"
 path2csv=FULL_NAME (TUSTEP,csv,-std-)
 status=READ (path2csv,daten,UTF8)
+IF (status!="OK") THEN 
+ PRINT/ERROR status
+ STOP
+ENDIF
 
 MODE DATA
 $$ BUILD S_TABLE trenner=*
